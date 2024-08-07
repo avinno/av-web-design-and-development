@@ -1,15 +1,10 @@
 import PropTypes from 'prop-types';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { all } from '@awesome.me/kit-d52ee281e2/icons'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-
-library.add(...all)
 
 function Header(props) {
     return(
         <header className="flex flex-row justify-between p-2">
             <a href="">{props.title}</a>
-            <FontAwesomeIcon icon="fa-regular fa-house" />
+            <i className="fa-regular fa-house"></i>
             <nav>
                 <ul className="flex flex-row gap-4">
                     <li>
